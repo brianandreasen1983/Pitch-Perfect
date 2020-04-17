@@ -43,9 +43,6 @@ class PlaySoundsViewController: UIViewController {
             playSound(pitch: 1000)
         case .lowPitch:
             playSound(pitch: -1000)
-            break
-        default:
-            break
         }
         
         configureUI(.playing)

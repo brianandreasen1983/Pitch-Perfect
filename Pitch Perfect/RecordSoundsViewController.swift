@@ -16,6 +16,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
     
+    enum recordingState {
+        case recording
+        case notRecording
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -56,7 +61,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         if flag {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
         } else {
-            print("recording not successful")
+            let alertVC = UIAlertController(title: "Recording Error", message: "something happened during recording. Please try again.", preferredStyle: .alert)
+            present(alertVC, animated: true)
         }
         
     }

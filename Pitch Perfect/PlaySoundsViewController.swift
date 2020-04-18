@@ -24,7 +24,7 @@ class PlaySoundsViewController: UIViewController {
     var audioEngine: AVAudioEngine!
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
-
+    
     enum ButtonType: Int {
         case slow = 0, fast, echo, reverb, highPitch, lowPitch
     }
@@ -54,10 +54,21 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configurePlaybackUI()
         setupAudio()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         configureUI(.notPlaying)
+    }
+    
+    func configurePlaybackUI(){
+        slowButton.imageView?.contentMode = .scaleAspectFit
+        fastButton.imageView?.contentMode = .scaleAspectFit
+        echoButton.imageView?.contentMode = .scaleAspectFit
+        reverbButton.imageView?.contentMode = .scaleAspectFit
+        lowPitchButton.imageView?.contentMode = .scaleAspectFit
+        highPitchButton.imageView?.contentMode = .scaleAspectFit
+        stopButton.imageView?.contentMode = .scaleAspectFit
     }
 }

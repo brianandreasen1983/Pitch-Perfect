@@ -103,15 +103,12 @@
 		4A2F7F3224479D8600E66CF0 /* Pitch Perfect */ = {
 			isa = PBXGroup;
 			children = (
-				4A2F7F3724479D8600E66CF0 /* RecordSoundsViewController.swift */,
-				4A2F7F3324479D8600E66CF0 /* AppDelegate.swift */,
-				4A2F7F3524479D8600E66CF0 /* SceneDelegate.swift */,
-				4A2F7F3924479D8600E66CF0 /* Main.storyboard */,
-				4A2F7F3C24479D8800E66CF0 /* Assets.xcassets */,
-				4A2F7F3E24479D8800E66CF0 /* LaunchScreen.storyboard */,
+				4AC04FBA244E104A0014BC06 /* Assets */,
+				4AC04FB9244E10440014BC06 /* Main */,
+				4AC04FB8244E10380014BC06 /* Models */,
+				4AC04FB7244E10330014BC06 /* UI */,
+				4AC04FB6244E102F0014BC06 /* ViewControllers */,
 				4A2F7F4124479D8800E66CF0 /* Info.plist */,
-				4A2F7F642447C07100E66CF0 /* PlaySoundsViewController.swift */,
-				4A2F7F662447D6D100E66CF0 /* PlaySoundsViewController+Audio.swift */,
 			);
 			path = "Pitch Perfect";
 			sourceTree = "<group>";
@@ -132,6 +129,49 @@
 				4A2F7F5724479D8800E66CF0 /* Info.plist */,
 			);
 			path = "Pitch PerfectUITests";
+			sourceTree = "<group>";
+		};
+		4AC04FB6244E102F0014BC06 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A2F7F3724479D8600E66CF0 /* RecordSoundsViewController.swift */,
+				4A2F7F642447C07100E66CF0 /* PlaySoundsViewController.swift */,
+				4A2F7F662447D6D100E66CF0 /* PlaySoundsViewController+Audio.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4AC04FB7244E10330014BC06 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4A2F7F3924479D8600E66CF0 /* Main.storyboard */,
+				4A2F7F3E24479D8800E66CF0 /* LaunchScreen.storyboard */,
+				4A2F7F3524479D8600E66CF0 /* SceneDelegate.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4AC04FB8244E10380014BC06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4AC04FB9244E10440014BC06 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4A2F7F3324479D8600E66CF0 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4AC04FBA244E104A0014BC06 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4A2F7F3C24479D8800E66CF0 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
